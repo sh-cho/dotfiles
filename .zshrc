@@ -81,6 +81,7 @@ plugins=(
 	docker
 	docker-compose
 	fast-syntax-highlighting
+	fzf
 	git
 	kubectl
 	wakatime
