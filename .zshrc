@@ -141,3 +141,8 @@ jdk() {
   export JAVA_HOME=$(/usr/libexec/java_home -v"$version");
   java -version
 }
+
+# Aliases
+alias v="nvim"
+alias vi="nvim"
+alias vim="nvim"
