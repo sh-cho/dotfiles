@@ -16,6 +16,7 @@ Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
 Plug 'preservim/nerdtree'
+Plug 'preservim/nerdcommenter'
 call plug#end()
 
 
