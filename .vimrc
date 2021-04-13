@@ -17,6 +17,7 @@ Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
 Plug 'preservim/nerdtree'
 Plug 'preservim/nerdcommenter'
+Plug 'codota/tabnine-vim'
 call plug#end()
 
 
