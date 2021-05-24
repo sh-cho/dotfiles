@@ -144,6 +144,11 @@ jdk() {
 }
 
 # Aliases
+alias gai="git add --interactive"
+ppp() {
+  pyenv activate likefit
+  pg_ctl -D /usr/local/var/postgres start
+}
 alias v="nvim"
 alias vi="nvim"
 alias vim="nvim"
