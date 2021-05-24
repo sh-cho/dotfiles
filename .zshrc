@@ -150,5 +150,7 @@ ppp() {
   pg_ctl -D /usr/local/var/postgres start
 }
 alias v="nvim"
-alias vi="nvim"
-alias vim="nvim"
+alias vi="echo Use v, instead of vi "
+alias vim="echo Use v, instead of vi "
+alias wgb="watch --color -n 1 git branch --color=always"
+alias wgd="watch --color -n 1 git diff HEAD --color=always"
