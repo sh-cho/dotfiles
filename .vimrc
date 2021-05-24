@@ -14,6 +14,7 @@ set ttimeout
 call plug#begin('~/.vim/plugged')
 Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat'
 Plug 'vim-airline/vim-airline'
 Plug 'preservim/nerdtree'
 Plug 'preservim/nerdcommenter'
