@@ -84,6 +84,7 @@ plugins=(
 	fzf
 	git
 	kubectl
+	terraform
 	wakatime
 	zsh-autosuggestions
 )
