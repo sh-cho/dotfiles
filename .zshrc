@@ -16,6 +16,7 @@ fi
 
 source "$HOME/.zinit/bin/zinit.zsh"
 autoload -Uz _zinit
+autoload -Uz compinit && compinit
 (( ${+_comps} )) && _comps[zinit]=_zinit
 
 # Load a few important annexes, without Turbo
