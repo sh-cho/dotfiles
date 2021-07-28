@@ -15,9 +15,6 @@ if [[ ! -f $HOME/.zinit/bin/zinit.zsh ]]; then
 fi
 
 source "$HOME/.zinit/bin/zinit.zsh"
-autoload -Uz _zinit
-autoload -Uz compinit && compinit
-(( ${+_comps} )) && _comps[zinit]=_zinit
 
 # Load a few important annexes, without Turbo
 # (this is currently required for annexes)
@@ -59,3 +56,9 @@ alias vi="echo Use v, instead of vi"
 alias vim="echo Use v, instead of vi"
 alias wgb="watch --color -n 1 git branch --color=always"
 alias wgd="watch --color -n 1 git diff HEAD --color=always"
+
+
+###############################################################################
+autoload -Uz compinit && compinit
+autoload -Uz _zinit
+(( ${+_comps} )) && _comps[zinit]=_zinit
