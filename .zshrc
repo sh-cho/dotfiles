@@ -57,6 +57,12 @@ alias vim="echo Use v, instead of vi"
 alias wgb="watch --color -n 1 git branch --color=always"
 alias wgd="watch --color -n 1 git diff HEAD --color=always"
 
+# python
+eval "$(pyenv init --path)"
+eval "$(pyenv init -)"
+if which pyenv-virtualenv-init > /dev/null; then
+    eval "$(pyenv virtualenv-init -)"
+fi
 
 ###############################################################################
 autoload -Uz compinit && compinit
