@@ -51,6 +51,7 @@ export PYTHONSTARTUP=~/.pythonrc
 
 # aliases
 alias gai="git add --interactive"
+alias ll="ls -lG"
 alias v="nvim"
 alias vi="echo Use v, instead of vi"
 alias vim="echo Use v, instead of vi"
