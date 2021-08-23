@@ -60,10 +60,10 @@ alias wgd="watch --color -n 1 git diff HEAD --color=always"
 
 # python
 eval "$(pyenv init --path)"
-eval "$(pyenv init -)"
-if which pyenv-virtualenv-init > /dev/null; then
-    eval "$(pyenv virtualenv-init -)"
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
 fi
+eval "$(pyenv virtualenv-init -)"
 
 ###############################################################################
 autoload -Uz compinit && compinit
