@@ -69,3 +69,4 @@ eval "$(pyenv virtualenv-init -)"
 autoload -Uz compinit && compinit
 autoload -Uz _zinit
 (( ${+_comps} )) && _comps[zinit]=_zinit
+zstyle ':completion:*' menu select
