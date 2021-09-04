@@ -48,6 +48,15 @@ zinit light wbingli/zsh-wakatime
 export VISUAL=nvim
 export EDITOR="${VISUAL}"
 export PYTHONSTARTUP=~/.pythonrc
+if [[ "${OSTYPE}" == "darwin"* && $(uname -p) == "arm" ]]; then
+  # workaround for m1 mac
+  export LDFLAGS="-L/opt/homebrew/opt/openssl/lib"
+  export CPPFLAGS="-I/opt/homebrew/opt/openssl/include"
+else
+  export LDFLAGS="-l/usr/local/opt/openssl/lib"
+  export CPPFLAGS="-i/usr/local/opt/openssl/include"
+fi
+
 
 # aliases
 alias gai="git add --interactive"
